@@ -1,0 +1,199 @@
+/* Sidebar.css */
+.alphabank-sidebar {
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo Section */
+.sidebar-logo {
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1E2A38;
+  border-bottom: 1px solid #2D3E50;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-full {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-collapsed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.logo-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.collapse-trigger {
+  color: #8A9BA8;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.collapse-trigger:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Divider */
+.sidebar-divider {
+  margin: 0 !important;
+  border-color: #2D3E50 !important;
+  background: #2D3E50 !important;
+}
+
+/* Navigation Section */
+.nav-section {
+  padding: 16px 20px 8px;
+}
+
+.nav-label {
+  color: #8A9BA8;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Menu Styles */
+.sidebar-menu {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px 0 !important;
+}
+
+.sidebar-menu .ant-menu-item,
+.sidebar-menu .ant-menu-submenu-title {
+  height: 44px !important;
+  margin: 0 !important;
+  padding: 0 20px !important;
+  border-radius: 0 !important;
+  color: #B8C2CC !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-right: 3px solid transparent;
+}
+
+.sidebar-menu .ant-menu-item:hover,
+.sidebar-menu .ant-menu-submenu-title:hover {
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-right-color: #667eea;
+}
+
+.sidebar-menu .ant-menu-item-selected {
+  color: #FFFFFF !important;
+  background: rgba(102, 126, 234, 0.15) !important;
+  border-right-color: #667eea;
+}
+
+.sidebar-menu .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #FFFFFF !important;
+  border-right-color: #667eea;
+}
+
+/* Submenu Styles */
+.sidebar-menu .ant-menu-sub {
+  background: #151F2B !important;
+}
+
+.sidebar-menu .ant-menu-sub .ant-menu-item {
+  padding-left: 56px !important;
+  background: transparent !important;
+  font-size: 13px;
+  color: #8A9BA8 !important;
+}
+
+.sidebar-menu .ant-menu-sub .ant-menu-item:hover {
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.sidebar-menu .ant-menu-sub .ant-menu-item-selected {
+  color: #FFFFFF !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Icons */
+.sidebar-menu .ant-menu-item-icon {
+  font-size: 16px !important;
+  color: #8A9BA8 !important;
+}
+
+.sidebar-menu .ant-menu-item:hover .ant-menu-item-icon,
+.sidebar-menu .ant-menu-item-selected .ant-menu-item-icon {
+  color: #667eea !important;
+}
+
+/* Expand Icon */
+.sidebar-menu .ant-menu-submenu-arrow,
+.sidebar-menu .ant-menu-submenu-expand-icon {
+  color: #8A9BA8 !important;
+}
+
+.sidebar-menu .ant-menu-submenu-title:hover .ant-menu-submenu-arrow,
+.sidebar-menu .ant-menu-submenu-title:hover .ant-menu-submenu-expand-icon {
+  color: #667eea !important;
+}
+
+/* Collapsed State */
+.alphabank-sidebar .ant-menu-inline-collapsed {
+  width: 80px;
+}
+
+.alphabank-sidebar .ant-menu-inline-collapsed .ant-menu-item,
+.alphabank-sidebar .ant-menu-inline-collapsed .ant-menu-submenu-title {
+  padding: 0 24px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.alphabank-sidebar .ant-menu-inline-collapsed .ant-menu-item-icon {
+  margin-right: 0 !important;
+  font-size: 18px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .alphabank-sidebar {
+    position: fixed !important;
+    z-index: 1000;
+    height: 100vh;
+  }
+  
+  .sidebar-logo {
+    padding: 16px;
+  }
+}
