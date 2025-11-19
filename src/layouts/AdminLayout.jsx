@@ -10,7 +10,7 @@ function AdminLayout() {
       </div>
 
       {/* Nội dung chính chiếm phần còn lại */}
-      <main style={{ flex: 1, padding: "20px", background: "#f5f5f5" }}>
+      <main style={{ flex: 1, padding: "20px", background: "#f5f5f5", marginLeft: 10 }}>
         <Outlet />
       </main>
     </div>
